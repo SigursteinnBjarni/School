@@ -1,8 +1,7 @@
 Data Structures.
 
-# Labs
-*
-*D2 = Vector implemetation
+## Labs
+<ul>*D2 = Vector implemetation
 *D3 = Doubly linked list implemetation
 *D4 = Character stack implemetation
 *D5 = Queue implemetation
@@ -10,8 +9,8 @@ Data Structures.
 *D7 = Prefix string and Trie Node
 *D9 = Bloom filter implemation
 *D11 = Vector template class
-
-# Assignmets
+</ul>
+## Assignmets
 *S1 = Linked list implemtation
 *S1_B = Set implemetaion using linked list
 *S2 = Huffman binary tree
