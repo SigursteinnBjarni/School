@@ -1,0 +1,39 @@
+(Kog
+	(Laq
+		(Saeb
+			()
+			())
+		(Spoj
+			()
+			()))
+	(To'h
+		()
+		(Guhq
+			()
+			())))
+25
+generation Kog
+generation Laq
+generation Saeb
+generation Spoj
+generation Bij
+generation To'h
+generation Guhq
+in_family Kog
+in_family Laq
+in_family Saeb
+in_family Spoj
+in_family To'h
+in_family Guhq
+in_family Co't
+in_family Doz
+descendant Kog Laq
+descendant Kog Guhq
+descendant Kog Saeb
+descendant Kog Spoj
+descendant To'h Guhq
+descendant Guhq To'h
+descendant Laq Guhq
+descendant Laq Qur
+descendant Qur Kog
+descendant Hex Jaep
