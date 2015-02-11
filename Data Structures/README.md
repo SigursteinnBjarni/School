@@ -1,6 +1,8 @@
-Data Structures.
+#Data Structures.
 
-## Labs
+All Projects are written in C++
+
+### Labs
 * D2 = Vector implemetation
 * D3 = Doubly linked list implemetation
 * D4 = Character stack implemetation
@@ -11,7 +13,7 @@ Data Structures.
 * D11 = Vector template class
 
 
-## Assignmets
+### Assignmets
 * S1 = Linked list implemtation
 * S1_B = Set implemetaion using linked list
 * S2 = Huffman binary tree
