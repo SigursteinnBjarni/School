@@ -34,5 +34,7 @@ private:
 
 	CylindricalEffect* _effect;
 
+	Ogre::Entity* _tempEnt;
+
 };
 

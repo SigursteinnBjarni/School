@@ -21,6 +21,8 @@ MyFrameListener::MyFrameListener(Ogre::RenderWindow* win, Ogre::Camera* cam, Ogr
 	_aniState->setLoop(false);
 	_dance = ent->getAnimationState("Dance");
 	
+	_tempEnt = ent;
+	
 	OIS::ParamList parameters;
 	unsigned int windowHandle = 0;
 	ostringstream windowHandleStream;
@@ -74,6 +76,13 @@ bool MyFrameListener::frameStarted(const Ogre::FrameEvent& evt)
 	bool dance = false;
 	if (_Keyboard->isKeyDown(OIS::KC_M)){
 		dance = true;
+	}
+
+	if (_Keyboard->isKeyDown(OIS::KC_K)){
+
+	}
+
+	if (_Keyboard->isKeyDown(OIS::KC_K)){
 	}
 
 	//Sinbad movement

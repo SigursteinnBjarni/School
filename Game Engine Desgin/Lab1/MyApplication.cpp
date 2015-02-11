@@ -107,17 +107,40 @@ int MyApplication::startUp()
 }
 void MyApplication::createScene()
 {
-	
+	//Import the model
 	Ogre::Entity* myModel = _sceneManager->createEntity("MyModel", "MyModel.mesh");
+	Ogre::Entity* myModel2 = _sceneManager->createEntity("MyModel2", "MyModel.mesh");
+
+	//create a scene node and attack the model to it
 	Ogre::SceneNode* modelNode = _sceneManager->getRootSceneNode()->createChildSceneNode();
+	Ogre::SceneNode* modelNode2 = _sceneManager->getRootSceneNode()->createChildSceneNode();
+
+	//attach the first model
 	modelNode->attachObject(myModel);
 	modelNode->setScale(5, 5, 5);
 	modelNode->setPosition(15, 0, 2);
-	
+
+	//attach the second model
+	modelNode2->attachObject(myModel2);
+	modelNode2->setScale(5, 5, 5);
+	modelNode2->setPosition(-15, 0, 2);
+	myModel2->setMaterialName("BlueMaterial");
+
+
 	//create sinbad
  	_SinbadEnt = _sceneManager->createEntity("Sinbad.mesh");
 	_SinbadNode = _sceneManager->getRootSceneNode()->createChildSceneNode();
 	_SinbadNode->attachObject(_SinbadEnt);
+
+	_SinbadEnt->getSubEntity(1)->setMaterialName("Sinbad/Body2");
+
+	//create two swords
+	Ogre::Entity* mySword = _sceneManager->createEntity("Sword", "Sword.mesh");
+	Ogre::Entity* mySword2 = _sceneManager->createEntity("Sword2", "Sword.mesh");
+
+	//attach the swords to the sheaths
+	_SinbadEnt->attachObjectToBone("Sheath.L", mySword);
+	_SinbadEnt->attachObjectToBone("Sheath.R", mySword2);
 
 	_myOgre = _SinbadEnt;
 
@@ -141,6 +164,14 @@ void MyApplication::createScene()
 	while (iter.hasMoreElements()) {
 		Ogre::AnimationState *a = iter.getNext();
 		std::cout << a->getAnimationName() << std::endl;
+	}
+
+	// Create a bone iterator.
+	Ogre::Skeleton::BoneIterator biter = _SinbadEnt->getSkeleton()->getBoneIterator();
+	// Iterate over the available bones and write their names to the console.
+	while (biter.hasMoreElements()) {
+		Ogre::Bone *bone = biter.getNext();
+		std::cout << bone->getName() << std::endl;
 	}
 
 	_sceneManager->setAmbientLight(Ogre::ColourValue(.3f, .3f, .3f));
