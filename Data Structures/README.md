@@ -9,6 +9,8 @@ Data Structures.
 * D7 = Prefix string and Trie Node
 * D9 = Bloom filter implemation
 * D11 = Vector template class
+
+
 ## Assignmets
 * S1 = Linked list implemtation
 * S1_B = Set implemetaion using linked list
