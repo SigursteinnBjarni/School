@@ -1,2 +1,6 @@
-﻿  MyInput.cpp
-  MyInput.vcxproj -> \\innra.umsja.is\nyh$\private\isrek\home\s\sigursteinnh\my documents\visual studio 2013\Projects\MyInput\Debug\MyInput.exe
+﻿  stdafx.cpp
+  MyInput.cpp
+  LineCounter.cpp
+n:\my documents\github\school\myinput\myinput\linecounter.cpp(8): error C2280: 'std::basic_ifstream<char,std::char_traits<char>> &std::basic_ifstream<char,std::char_traits<char>>::operator =(const std::basic_ifstream<char,std::char_traits<char>> &)' : attempting to reference a deleted function
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\fstream(819) : see declaration of 'std::basic_ifstream<char,std::char_traits<char>>::operator ='
+  Generating Code...
